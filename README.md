@@ -37,4 +37,25 @@ Copy
 Edit
 python scripts/setup_db.py
 🧪 Running Tests
-Tests are written using pytest.
+Tests are written using pytest
+
+bash
+Copy
+Edit
+pytest
+📚 Features
+✅ Author
+Create/find authors
+
+List all articles by the author
+
+List all magazines the author has written for
+
+Add a new article
+
+List topic areas (categories) contributed to
+
+✅ Magazine
+Create/find magazines
+
+List all articles in the magazine.
