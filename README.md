@@ -52,7 +52,7 @@ Add new articles
 
 Get topic areas from associated magazines
 
-Magazine
+##Magazine
 Create and save magazines
 
 Find magazines by ID, name, or category
@@ -64,3 +64,8 @@ Get all contributing authors
 Get titles of all articles
 
 Find authors with more than 2 articles in the magazine
+
+##Article
+Create and save articles
+
+Find articles by various fields (ID, title, author, magazine)
