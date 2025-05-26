@@ -25,3 +25,16 @@ python
 Copy
 Edit
 import sqlite3
+
+def get_connection():
+    conn = sqlite3.connect('articles.db')
+    conn.row_factory = sqlite3.Row
+    return conn
+To initialize the schema:
+
+bash
+Copy
+Edit
+python scripts/setup_db.py
+🧪 Running Tests
+Tests are written using pytest.
