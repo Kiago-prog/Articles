@@ -11,3 +11,10 @@ This project models the relationships between authors, articles, and magazines u
 ```bash
 pipenv install
 pipenv shell
+```
+```bash 
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+pip install -r requirements.txt
+```
+
