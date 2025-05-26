@@ -18,3 +18,15 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 ```
 
+🗄️ Database Setup
+Using SQLite by default:
+
+Define your schema in lib/db/schema.sql.
+
+Set up the database:
+
+```bash
+python scripts/setup_db.py
+```
+The database file articles.db will be created with the necessary tables for authors, articles, and magazines.
+
