@@ -30,3 +30,11 @@ python scripts/setup_db.py
 ```
 The database file articles.db will be created with the necessary tables for authors, articles, and magazines.
 
+🧪 Running Tests
+Tests are written with pytest. To run them:
+
+```bash
+pytest
+```
+Make sure your database is set up before testing.
+
