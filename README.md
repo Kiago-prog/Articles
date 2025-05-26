@@ -38,3 +38,16 @@ pytest
 ```
 Make sure your database is set up before testing.
 
+✅ Features
+Author
+Create and save authors
+
+Find authors by ID or name
+
+Retrieve all articles by an author
+
+Get all magazines the author contributed to
+
+Add new articles
+
+Get topic areas from associated magazines
