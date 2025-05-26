@@ -51,3 +51,16 @@ Get all magazines the author contributed to
 Add new articles
 
 Get topic areas from associated magazines
+
+Magazine
+Create and save magazines
+
+Find magazines by ID, name, or category
+
+Retrieve all articles in a magazine
+
+Get all contributing authors
+
+Get titles of all articles
+
+Find authors with more than 2 articles in the magazine
