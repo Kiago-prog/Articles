@@ -18,19 +18,19 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-🗄️ Database Setup
+##  🗄️ Database Setup
 Using SQLite by default:
 
 Define your schema in lib/db/schema.sql.
 
-Set up the database:
+##  Set up the database:
 
 ```bash
 python scripts/setup_db.py
 ```
 The database file articles.db will be created with the necessary tables for authors, articles, and magazines.
 
-🧪 Running Tests
+##  🧪 Running Tests
 Tests are written with pytest. To run them:
 
 ```bash
@@ -38,7 +38,7 @@ pytest
 ```
 Make sure your database is set up before testing.
 
-✅ Features
+##  ✅ Features
 Author
 Create and save authors
 
@@ -52,7 +52,7 @@ Add new articles
 
 Get topic areas from associated magazines
 
-##Magazine
+##  Magazine
 Create and save magazines
 
 Find magazines by ID, name, or category
@@ -65,7 +65,7 @@ Get titles of all articles
 
 Find authors with more than 2 articles in the magazine
 
-##Article
+##  Article
 Create and save articles
 
 Find articles by various fields (ID, title, author, magazine)
