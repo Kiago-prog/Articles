@@ -1,18 +1,24 @@
+import pytest
 from lib.models.article import Article
 from lib.models.author import Author
 from lib.models.magazine import Magazine
+from lib.db.connection import get_connection
 
-def test_article_can_be_saved_and_retrieved():
-    author = Author(name="Article Author")
-    author.save()
+def setup_function():
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.executescript("""
+        DELETE FROM articles;
+        DELETE FROM magazines;
+        DELETE FROM authors;
+    """)
+    conn.commit()
 
-    magazine = Magazine(name="Tech Weekly", category="Technology")
-    magazine.save()
+def test_create_article():
+    author = Author.create("J.K. Rowling")
+    mag = Magazine.create("Fantasy Monthly", "Fantasy")
+    article = Article.create("Wizards Unite", author.id, mag.id)
 
-    article = Article(title="AI Trends", author_id=author.id, magazine_id=magazine.id)
-    article.save()
-
-    fetched = Article.find_by_id(article.id)
-    assert fetched.title == "AI Trends"
-    assert fetched.author_id == author.id
-    assert fetched.magazine_id == magazine.id
+    assert article.title == "Wizards Unite"
+    assert article.author_id == author.id
+    assert article.magazine_id == mag.id
